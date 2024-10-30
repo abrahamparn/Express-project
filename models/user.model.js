@@ -4,7 +4,7 @@ const checkUsername = async (username) => {
   const result = await db.query(`SELECT EXISTS (SELECT 1 FROM users WHERE username = ($1))`, [
     username,
   ]);
-  return result.rows[0];
+  return result.rows[0].exists;
 };
 
 const createUser = async (username, password, name) => {
@@ -20,8 +20,14 @@ const deleteOneUser = async (username) => {
   const result = await db.query(`DELETE FROM USERS WHERE USERNAME = $1`, [username]);
   return result.rowCount > 0; // Returns true if at least one row was deleted
 };
+
+const selectOneUser = async (username) => {
+  const result = await db.query(`SELECT * FROM USERS WHERE USERNAME = $1`, [username]);
+  return result.rows[0];
+};
 module.exports = {
   checkUsername,
   createUser,
   deleteOneUser,
+  selectOneUser,
 };
