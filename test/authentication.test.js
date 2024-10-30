@@ -11,7 +11,10 @@ const { hashPassword } = require("../utils/password");
 describe("test for authentication", () => {
   describe("registration test", () => {
     beforeEach(async () => {
-      // Ensure the test user is deleted before each test
+      await deleteOneUser("testingUser");
+    });
+
+    afterEach(async () => {
       await deleteOneUser("testingUser");
     });
 
