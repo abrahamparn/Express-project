@@ -2,7 +2,7 @@ const supertest = require("supertest");
 const { test, after, describe, beforeEach, before } = require("node:test");
 const assert = require("node:assert");
 
-const app = require("../app");
+const app = require("../../app");
 const api = supertest(app);
 
 describe("Test API testing", () => {

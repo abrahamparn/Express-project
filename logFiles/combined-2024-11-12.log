@@ -1,0 +1,686 @@
+2024-11-12 11:56:54 [INFO]: Connecting to PostgreSQL at
+2024-11-12 11:56:54 [INFO]: Server running on port 3003
+2024-11-12 11:57:00 [INFO]: Connecting to PostgreSQL at
+2024-11-12 11:57:00 [INFO]: Server running on port 3003
+2024-11-12 11:57:07 [INFO]: Connecting to PostgreSQL at
+2024-11-12 11:57:07 [INFO]: Connected to the PostgreSQL database
+2024-11-12 11:57:07 [INFO]: Method: POST
+2024-11-12 11:57:07 [INFO]: Connecting to PostgreSQL at
+2024-11-12 11:57:07 [INFO]: Path:   /api/authentication/register/
+2024-11-12 11:57:07 [INFO]: Body:   {}
+2024-11-12 11:57:07 [INFO]: ---
+2024-11-12 11:57:07 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:04:57:07 +0000] "POST /api/authentication/register/ HTTP/1.1" 400 286 "-" "-"
+2024-11-12 11:57:07 [INFO]: Method: GET
+2024-11-12 11:57:07 [INFO]: Path:   /api/test/
+2024-11-12 11:57:07 [INFO]: Body:   {}
+2024-11-12 11:57:07 [INFO]: ---
+2024-11-12 11:57:07 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:04:57:07 +0000] "GET /api/test/ HTTP/1.1" 200 289 "-" "-"
+2024-11-12 11:57:07 [INFO]: Method: POST
+2024-11-12 11:57:07 [INFO]: Path:   /api/authentication/register/
+2024-11-12 11:57:07 [INFO]: Body:   {"name":"abraham naiborhu","password":"10","username":"abraham"}
+2024-11-12 11:57:07 [INFO]: ---
+2024-11-12 11:57:07 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:04:57:07 +0000] "POST /api/authentication/register/ HTTP/1.1" 400 125 "-" "-"
+2024-11-12 11:57:07 [INFO]: Method: POST
+2024-11-12 11:57:07 [INFO]: Path:   /api/authentication/register/
+2024-11-12 11:57:07 [INFO]: Body:   {"name":"abraham naiborhu","password":"10","username":"ab"}
+2024-11-12 11:57:07 [INFO]: ---
+2024-11-12 11:57:07 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:04:57:07 +0000] "POST /api/authentication/register/ HTTP/1.1" 400 238 "-" "-"
+2024-11-12 11:57:07 [INFO]: Method: POST
+2024-11-12 11:57:07 [INFO]: Path:   /api/authentication/register
+2024-11-12 11:57:07 [INFO]: Body:   {"name":"abraham naiborhu","password":"100000","username":"abraham"}
+2024-11-12 11:57:07 [INFO]: ---
+2024-11-12 11:57:07 [INFO]: Method: POST
+2024-11-12 11:57:07 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:04:57:07 +0000] "POST /api/authentication/register HTTP/1.1" 400 63 "-" "-"
+2024-11-12 11:57:07 [INFO]: Method: POST
+2024-11-12 11:57:07 [INFO]: Path:   /api/authentication/register
+2024-11-12 11:57:07 [INFO]: Body:   {"name":"testingUser","password":"testingUser","username":"testingUser"}
+2024-11-12 11:57:07 [INFO]: ---
+2024-11-12 11:57:07 [INFO]: Path:   /api/test/testDatabase
+2024-11-12 11:57:07 [INFO]: Body:   {"description":"Success"}
+2024-11-12 11:57:07 [INFO]: ---
+2024-11-12 11:57:07 [INFO]: Connected to the PostgreSQL database
+2024-11-12 11:57:07 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:04:57:07 +0000] "POST /api/test/testDatabase HTTP/1.1" 200 55 "-" "-"
+2024-11-12 11:57:07 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:04:57:07 +0000] "POST /api/authentication/register HTTP/1.1" 201 79 "-" "-"
+2024-11-12 11:57:07 [INFO]: Method: POST
+2024-11-12 11:57:07 [INFO]: Path:   /api/test/testDatabase
+2024-11-12 11:57:07 [INFO]: Body:   {"description":""}
+2024-11-12 11:57:07 [INFO]: ---
+2024-11-12 11:57:07 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:04:57:07 +0000] "POST /api/test/testDatabase HTTP/1.1" 400 39 "-" "-"
+2024-11-12 11:57:07 [INFO]: Method: POST
+2024-11-12 11:57:07 [INFO]: Path:   /api/authentication/login
+2024-11-12 11:57:07 [INFO]: Body:   {}
+2024-11-12 11:57:07 [INFO]: ---
+2024-11-12 11:57:07 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:04:57:07 +0000] "POST /api/authentication/login HTTP/1.1" 400 46 "-" "-"
+2024-11-12 11:57:08 [INFO]: Method: POST
+2024-11-12 11:57:08 [INFO]: Path:   /api/authentication/login
+2024-11-12 11:57:08 [INFO]: Body:   {"username":"hohoho","password":"testingUser"}
+2024-11-12 11:57:08 [INFO]: ---
+2024-11-12 11:57:08 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:04:57:08 +0000] "POST /api/authentication/login HTTP/1.1" 400 40 "-" "-"
+2024-11-12 11:57:08 [INFO]: Method: POST
+2024-11-12 11:57:08 [INFO]: Path:   /api/authentication/login
+2024-11-12 11:57:08 [INFO]: Body:   {"username":"testingLogin","password":"nonono"}
+2024-11-12 11:57:08 [INFO]: ---
+2024-11-12 11:57:08 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:04:57:08 +0000] "POST /api/authentication/login HTTP/1.1" 400 40 "-" "-"
+2024-11-12 11:57:08 [INFO]: Method: POST
+2024-11-12 11:57:08 [INFO]: Path:   /api/authentication/login
+2024-11-12 11:57:08 [INFO]: Body:   {"username":"testingLogin","password":"testingLogin"}
+2024-11-12 11:57:08 [INFO]: ---
+2024-11-12 11:57:08 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:04:57:08 +0000] "POST /api/authentication/login HTTP/1.1" 200 213 "-" "-"
+2024-11-12 11:57:08 [INFO]: Method: POST
+2024-11-12 11:57:08 [INFO]: Path:   /api/authentication/change-password
+2024-11-12 11:57:08 [INFO]: Body:   {}
+2024-11-12 11:57:08 [INFO]: ---
+2024-11-12 11:57:08 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:04:57:08 +0000] "POST /api/authentication/change-password HTTP/1.1" 401 24 "-" "-"
+2024-11-12 11:57:08 [INFO]: Method: POST
+2024-11-12 11:57:08 [INFO]: Path:   /api/authentication/change-password
+2024-11-12 11:57:08 [INFO]: Body:   {"username":"testingLogin","password":"testingLogin","newPassword":"testingLogin2"}
+2024-11-12 11:57:08 [INFO]: ---
+2024-11-12 11:57:08 [ERROR]: Invalid token: jwt malformed
+2024-11-12 11:57:08 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:04:57:08 +0000] "POST /api/authentication/change-password HTTP/1.1" 401 25 "-" "-"
+2024-11-12 11:57:08 [INFO]: Method: POST
+2024-11-12 11:57:08 [INFO]: Path:   /api/authentication/login
+2024-11-12 11:57:08 [INFO]: Body:   {"username":"testingLogin","password":"testingLogin"}
+2024-11-12 11:57:08 [INFO]: ---
+2024-11-12 11:57:08 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:04:57:08 +0000] "POST /api/authentication/login HTTP/1.1" 200 213 "-" "-"
+2024-11-12 11:57:08 [INFO]: Method: POST
+2024-11-12 11:57:08 [INFO]: Path:   /api/authentication/change-password
+2024-11-12 11:57:08 [INFO]: Body:   {"username":"testingLogin","password":"","newPassword":""}
+2024-11-12 11:57:08 [INFO]: ---
+2024-11-12 11:57:08 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:04:57:08 +0000] "POST /api/authentication/change-password HTTP/1.1" 400 63 "-" "-"
+2024-11-12 11:57:08 [INFO]: Method: POST
+2024-11-12 11:57:08 [INFO]: Path:   /api/authentication/login
+2024-11-12 11:57:08 [INFO]: Body:   {"username":"testingLogin","password":"testingLogin"}
+2024-11-12 11:57:08 [INFO]: ---
+2024-11-12 11:57:08 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:04:57:08 +0000] "POST /api/authentication/login HTTP/1.1" 200 213 "-" "-"
+2024-11-12 11:57:08 [INFO]: Method: POST
+2024-11-12 11:57:08 [INFO]: Path:   /api/authentication/change-password
+2024-11-12 11:57:08 [INFO]: Body:   {"username":"wrong","password":"testingLogin","newPassword":"testingLogin"}
+2024-11-12 11:57:08 [INFO]: ---
+2024-11-12 11:57:08 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:04:57:08 +0000] "POST /api/authentication/change-password HTTP/1.1" 403 49 "-" "-"
+2024-11-12 13:15:42 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:15:42 [INFO]: Server running on port 3003
+2024-11-12 13:20:11 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:20:11 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:20:11 [INFO]: Method: GET
+2024-11-12 13:20:11 [INFO]: Path:   /api/test/
+2024-11-12 13:20:11 [INFO]: Body:   {}
+2024-11-12 13:20:11 [INFO]: ---
+2024-11-12 13:20:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:20:11 +0000] "GET /api/test/ HTTP/1.1" 200 289 "-" "-"
+2024-11-12 13:20:11 [INFO]: Method: POST
+2024-11-12 13:20:11 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:20:11 [INFO]: Path:   /api/test/testDatabase
+2024-11-12 13:20:11 [INFO]: Body:   {"description":"Success"}
+2024-11-12 13:20:11 [INFO]: ---
+2024-11-12 13:20:11 [INFO]: Method: POST
+2024-11-12 13:20:11 [INFO]: Path:   /api/authentication/register/
+2024-11-12 13:20:11 [INFO]: Body:   {}
+2024-11-12 13:20:11 [INFO]: ---
+2024-11-12 13:20:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:20:11 +0000] "POST /api/authentication/register/ HTTP/1.1" 400 286 "-" "-"
+2024-11-12 13:20:11 [INFO]: Method: POST
+2024-11-12 13:20:11 [INFO]: Path:   /api/authentication/register/
+2024-11-12 13:20:11 [INFO]: Body:   {"name":"abraham naiborhu","password":"10","username":"abraham"}
+2024-11-12 13:20:11 [INFO]: ---
+2024-11-12 13:20:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:20:11 +0000] "POST /api/authentication/register/ HTTP/1.1" 400 125 "-" "-"
+2024-11-12 13:20:11 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:20:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:20:11 +0000] "POST /api/test/testDatabase HTTP/1.1" 200 55 "-" "-"
+2024-11-12 13:20:11 [INFO]: Method: POST
+2024-11-12 13:20:11 [INFO]: Path:   /api/authentication/register/
+2024-11-12 13:20:11 [INFO]: Body:   {"name":"abraham naiborhu","password":"10","username":"ab"}
+2024-11-12 13:20:11 [INFO]: ---
+2024-11-12 13:20:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:20:11 +0000] "POST /api/authentication/register/ HTTP/1.1" 400 238 "-" "-"
+2024-11-12 13:20:11 [INFO]: Method: POST
+2024-11-12 13:20:11 [INFO]: Path:   /api/test/testDatabase
+2024-11-12 13:20:11 [INFO]: Body:   {"description":""}
+2024-11-12 13:20:11 [INFO]: ---
+2024-11-12 13:20:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:20:11 +0000] "POST /api/test/testDatabase HTTP/1.1" 400 39 "-" "-"
+2024-11-12 13:20:11 [INFO]: Method: POST
+2024-11-12 13:20:11 [INFO]: Path:   /api/authentication/register
+2024-11-12 13:20:11 [INFO]: Body:   {"name":"abraham naiborhu","password":"100000","username":"abraham"}
+2024-11-12 13:20:11 [INFO]: ---
+2024-11-12 13:20:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:20:11 +0000] "POST /api/authentication/register HTTP/1.1" 400 63 "-" "-"
+2024-11-12 13:20:11 [INFO]: Method: POST
+2024-11-12 13:20:11 [INFO]: Path:   /api/authentication/register
+2024-11-12 13:20:11 [INFO]: Body:   {"name":"testingUser","password":"testingUser","username":"testingUser"}
+2024-11-12 13:20:11 [INFO]: ---
+2024-11-12 13:20:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:20:11 +0000] "POST /api/authentication/register HTTP/1.1" 201 79 "-" "-"
+2024-11-12 13:20:11 [INFO]: Method: POST
+2024-11-12 13:20:11 [INFO]: Path:   /api/authentication/login
+2024-11-12 13:20:11 [INFO]: Body:   {}
+2024-11-12 13:20:11 [INFO]: ---
+2024-11-12 13:20:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:20:11 +0000] "POST /api/authentication/login HTTP/1.1" 400 46 "-" "-"
+2024-11-12 13:20:11 [INFO]: Method: POST
+2024-11-12 13:20:11 [INFO]: Path:   /api/authentication/login
+2024-11-12 13:20:11 [INFO]: Body:   {"username":"hohoho","password":"testingUser"}
+2024-11-12 13:20:11 [INFO]: ---
+2024-11-12 13:20:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:20:11 +0000] "POST /api/authentication/login HTTP/1.1" 400 40 "-" "-"
+2024-11-12 13:20:11 [INFO]: Method: POST
+2024-11-12 13:20:11 [INFO]: Path:   /api/authentication/login
+2024-11-12 13:20:11 [INFO]: Body:   {"username":"testingLogin","password":"nonono"}
+2024-11-12 13:20:11 [INFO]: ---
+2024-11-12 13:20:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:20:11 +0000] "POST /api/authentication/login HTTP/1.1" 400 40 "-" "-"
+2024-11-12 13:20:11 [INFO]: Method: POST
+2024-11-12 13:20:11 [INFO]: Path:   /api/authentication/login
+2024-11-12 13:20:11 [INFO]: Body:   {"username":"testingLogin","password":"testingLogin"}
+2024-11-12 13:20:11 [INFO]: ---
+2024-11-12 13:20:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:20:11 +0000] "POST /api/authentication/login HTTP/1.1" 200 213 "-" "-"
+2024-11-12 13:20:11 [INFO]: Method: POST
+2024-11-12 13:20:11 [INFO]: Path:   /api/authentication/change-password
+2024-11-12 13:20:11 [INFO]: Body:   {}
+2024-11-12 13:20:11 [INFO]: ---
+2024-11-12 13:20:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:20:11 +0000] "POST /api/authentication/change-password HTTP/1.1" 401 24 "-" "-"
+2024-11-12 13:20:11 [INFO]: Method: POST
+2024-11-12 13:20:11 [INFO]: Path:   /api/authentication/change-password
+2024-11-12 13:20:11 [INFO]: Body:   {"username":"testingLogin","password":"testingLogin","newPassword":"testingLogin2"}
+2024-11-12 13:20:11 [INFO]: ---
+2024-11-12 13:20:11 [ERROR]: Invalid token: jwt malformed
+2024-11-12 13:20:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:20:11 +0000] "POST /api/authentication/change-password HTTP/1.1" 401 25 "-" "-"
+2024-11-12 13:20:11 [INFO]: Method: POST
+2024-11-12 13:20:11 [INFO]: Path:   /api/authentication/login
+2024-11-12 13:20:11 [INFO]: Body:   {"username":"testingLogin","password":"testingLogin"}
+2024-11-12 13:20:11 [INFO]: ---
+2024-11-12 13:20:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:20:11 +0000] "POST /api/authentication/login HTTP/1.1" 200 213 "-" "-"
+2024-11-12 13:20:11 [INFO]: Method: POST
+2024-11-12 13:20:11 [INFO]: Path:   /api/authentication/change-password
+2024-11-12 13:20:11 [INFO]: Body:   {"username":"testingLogin","password":"","newPassword":""}
+2024-11-12 13:20:11 [INFO]: ---
+2024-11-12 13:20:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:20:11 +0000] "POST /api/authentication/change-password HTTP/1.1" 400 63 "-" "-"
+2024-11-12 13:20:12 [INFO]: Method: POST
+2024-11-12 13:20:12 [INFO]: Path:   /api/authentication/login
+2024-11-12 13:20:12 [INFO]: Body:   {"username":"testingLogin","password":"testingLogin"}
+2024-11-12 13:20:12 [INFO]: ---
+2024-11-12 13:20:12 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:20:12 +0000] "POST /api/authentication/login HTTP/1.1" 200 213 "-" "-"
+2024-11-12 13:20:12 [INFO]: Method: POST
+2024-11-12 13:20:12 [INFO]: Path:   /api/authentication/change-password
+2024-11-12 13:20:12 [INFO]: Body:   {"username":"wrong","password":"testingLogin","newPassword":"testingLogin"}
+2024-11-12 13:20:12 [INFO]: ---
+2024-11-12 13:20:12 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:20:12 +0000] "POST /api/authentication/change-password HTTP/1.1" 403 49 "-" "-"
+2024-11-12 13:21:19 [INFO]: Method: POST
+2024-11-12 13:21:19 [INFO]: Path:   /api/authentication/register/
+2024-11-12 13:21:19 [INFO]: Body:   {"name":" ","password":" ","username":" "}
+2024-11-12 13:21:19 [INFO]: ---
+2024-11-12 13:21:19 [INFO]: ::1 - - [12/Nov/2024:06:21:19 +0000] "POST /api/authentication/register/ HTTP/1.1" 400 236 "-" "PostmanRuntime/7.42.0"
+2024-11-12 13:21:41 [INFO]: Method: POST
+2024-11-12 13:21:41 [INFO]: Path:   /api/authentication/register/
+2024-11-12 13:21:41 [INFO]: Body:   {}
+2024-11-12 13:21:41 [INFO]: ---
+2024-11-12 13:21:41 [INFO]: ::1 - - [12/Nov/2024:06:21:41 +0000] "POST /api/authentication/register/ HTTP/1.1" 400 286 "-" "PostmanRuntime/7.42.0"
+2024-11-12 13:21:54 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:21:54 [INFO]: Server running on port 3003
+2024-11-12 13:22:19 [INFO]: Method: POST
+2024-11-12 13:22:19 [INFO]: Path:   /api/authentication/register/
+2024-11-12 13:22:19 [INFO]: Body:   {"name":"abraham","password":"hai","username":"abraham"}
+2024-11-12 13:22:19 [INFO]: ---
+2024-11-12 13:22:19 [INFO]: ::1 - - [12/Nov/2024:06:22:19 +0000] "POST /api/authentication/register/ HTTP/1.1" 400 126 "-" "PostmanRuntime/7.42.0"
+2024-11-12 13:22:24 [INFO]: Method: POST
+2024-11-12 13:22:24 [INFO]: Path:   /api/authentication/register/
+2024-11-12 13:22:24 [INFO]: Body:   {"name":"abraham","password":"haihaihai","username":"abraham"}
+2024-11-12 13:22:24 [INFO]: ---
+2024-11-12 13:22:24 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:22:24 [INFO]: ::1 - - [12/Nov/2024:06:22:24 +0000] "POST /api/authentication/register/ HTTP/1.1" 400 63 "-" "PostmanRuntime/7.42.0"
+2024-11-12 13:27:59 [INFO]: Method: POST
+2024-11-12 13:27:59 [INFO]: Path:   /api/authentication/register/
+2024-11-12 13:27:59 [INFO]: Body:   {"name":"","password":"","username":"abraham"}
+2024-11-12 13:27:59 [INFO]: ---
+2024-11-12 13:27:59 [INFO]: ::1 - - [12/Nov/2024:06:27:59 +0000] "POST /api/authentication/register/ HTTP/1.1" 400 208 "-" "PostmanRuntime/7.42.0"
+2024-11-12 13:28:24 [INFO]: Method: POST
+2024-11-12 13:28:24 [INFO]: Path:   /api/authentication/register/
+2024-11-12 13:28:24 [INFO]: Body:   {}
+2024-11-12 13:28:24 [INFO]: ---
+2024-11-12 13:28:24 [INFO]: ::1 - - [12/Nov/2024:06:28:24 +0000] "POST /api/authentication/register/ HTTP/1.1" 400 286 "-" "PostmanRuntime/7.42.0"
+2024-11-12 13:29:31 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:29:31 [INFO]: Server running on port 3003
+2024-11-12 13:29:42 [INFO]: Method: POST
+2024-11-12 13:29:42 [INFO]: Path:   /api/authentication/register/
+2024-11-12 13:29:42 [INFO]: Body:   {"username":"","password":""}
+2024-11-12 13:29:42 [INFO]: ---
+2024-11-12 13:29:42 [INFO]: ::1 - - [12/Nov/2024:06:29:42 +0000] "POST /api/authentication/register/ HTTP/1.1" 400 308 "-" "PostmanRuntime/7.42.0"
+2024-11-12 13:30:22 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:30:22 [INFO]: Server running on port 3003
+2024-11-12 13:30:24 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:30:24 [INFO]: Server running on port 3003
+2024-11-12 13:30:30 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:30:30 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:30:30 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:30:30 [INFO]: Method: GET
+2024-11-12 13:30:30 [INFO]: Method: POST
+2024-11-12 13:30:30 [INFO]: Path:   /api/test/
+2024-11-12 13:30:30 [INFO]: Body:   {}
+2024-11-12 13:30:30 [INFO]: ---
+2024-11-12 13:30:30 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:30:30 +0000] "GET /api/test/ HTTP/1.1" 200 289 "-" "-"
+2024-11-12 13:30:30 [INFO]: Path:   /api/authentication/register/
+2024-11-12 13:30:30 [INFO]: Body:   {}
+2024-11-12 13:30:30 [INFO]: ---
+2024-11-12 13:30:30 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:30:30 +0000] "POST /api/authentication/register/ HTTP/1.1" 400 286 "-" "-"
+2024-11-12 13:30:30 [INFO]: Method: POST
+2024-11-12 13:30:30 [INFO]: Path:   /api/authentication/register/
+2024-11-12 13:30:30 [INFO]: Body:   {"name":"abraham naiborhu","password":"10","username":"abraham"}
+2024-11-12 13:30:30 [INFO]: ---
+2024-11-12 13:30:30 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:30:30 +0000] "POST /api/authentication/register/ HTTP/1.1" 400 125 "-" "-"
+2024-11-12 13:30:30 [INFO]: Method: POST
+2024-11-12 13:30:30 [INFO]: Method: POST
+2024-11-12 13:30:30 [INFO]: Path:   /api/authentication/register/
+2024-11-12 13:30:30 [INFO]: Body:   {"name":"abraham naiborhu","password":"10","username":"ab"}
+2024-11-12 13:30:30 [INFO]: ---
+2024-11-12 13:30:30 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:30:30 +0000] "POST /api/authentication/register/ HTTP/1.1" 400 238 "-" "-"
+2024-11-12 13:30:30 [INFO]: Path:   /api/test/testDatabase
+2024-11-12 13:30:30 [INFO]: Body:   {"description":"Success"}
+2024-11-12 13:30:30 [INFO]: ---
+2024-11-12 13:30:30 [INFO]: Method: POST
+2024-11-12 13:30:30 [INFO]: Path:   /api/authentication/register
+2024-11-12 13:30:30 [INFO]: Body:   {"name":"abraham naiborhu","password":"100000","username":"abraham"}
+2024-11-12 13:30:30 [INFO]: ---
+2024-11-12 13:30:30 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:30:30 +0000] "POST /api/authentication/register HTTP/1.1" 400 63 "-" "-"
+2024-11-12 13:30:30 [INFO]: Method: POST
+2024-11-12 13:30:30 [INFO]: Path:   /api/authentication/register
+2024-11-12 13:30:30 [INFO]: Body:   {"name":"testingUser","password":"testingUser","username":"testingUser"}
+2024-11-12 13:30:30 [INFO]: ---
+2024-11-12 13:30:30 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:30:30 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:30:30 +0000] "POST /api/test/testDatabase HTTP/1.1" 200 55 "-" "-"
+2024-11-12 13:30:30 [INFO]: Method: POST
+2024-11-12 13:30:30 [INFO]: Path:   /api/test/testDatabase
+2024-11-12 13:30:30 [INFO]: Body:   {"description":""}
+2024-11-12 13:30:30 [INFO]: ---
+2024-11-12 13:30:30 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:30:30 +0000] "POST /api/test/testDatabase HTTP/1.1" 400 39 "-" "-"
+2024-11-12 13:30:30 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:30:30 +0000] "POST /api/authentication/register HTTP/1.1" 201 79 "-" "-"
+2024-11-12 13:30:31 [INFO]: Method: POST
+2024-11-12 13:30:31 [INFO]: Path:   /api/authentication/login
+2024-11-12 13:30:31 [INFO]: Body:   {"username":"hohoho","password":"testingUser"}
+2024-11-12 13:30:31 [INFO]: ---
+2024-11-12 13:30:31 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:30:31 +0000] "POST /api/authentication/login HTTP/1.1" 400 40 "-" "-"
+2024-11-12 13:30:31 [INFO]: Method: POST
+2024-11-12 13:30:31 [INFO]: Path:   /api/authentication/login
+2024-11-12 13:30:31 [INFO]: Body:   {"username":"testingLogin","password":"nonono"}
+2024-11-12 13:30:31 [INFO]: ---
+2024-11-12 13:30:31 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:30:31 +0000] "POST /api/authentication/login HTTP/1.1" 400 40 "-" "-"
+2024-11-12 13:30:31 [INFO]: Method: POST
+2024-11-12 13:30:31 [INFO]: Path:   /api/authentication/login
+2024-11-12 13:30:31 [INFO]: Body:   {"username":"testingLogin","password":"testingLogin"}
+2024-11-12 13:30:31 [INFO]: ---
+2024-11-12 13:30:31 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:30:31 +0000] "POST /api/authentication/login HTTP/1.1" 200 213 "-" "-"
+2024-11-12 13:30:31 [INFO]: Method: POST
+2024-11-12 13:30:31 [INFO]: Path:   /api/authentication/change-password
+2024-11-12 13:30:31 [INFO]: Body:   {}
+2024-11-12 13:30:31 [INFO]: ---
+2024-11-12 13:30:31 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:30:31 +0000] "POST /api/authentication/change-password HTTP/1.1" 401 24 "-" "-"
+2024-11-12 13:30:31 [INFO]: Method: POST
+2024-11-12 13:30:31 [INFO]: Path:   /api/authentication/change-password
+2024-11-12 13:30:31 [INFO]: Body:   {"username":"testingLogin","password":"testingLogin","newPassword":"testingLogin2"}
+2024-11-12 13:30:31 [INFO]: ---
+2024-11-12 13:30:31 [ERROR]: Invalid token: jwt malformed
+2024-11-12 13:30:31 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:30:31 +0000] "POST /api/authentication/change-password HTTP/1.1" 401 25 "-" "-"
+2024-11-12 13:30:31 [INFO]: Method: POST
+2024-11-12 13:30:31 [INFO]: Path:   /api/authentication/login
+2024-11-12 13:30:31 [INFO]: Body:   {"username":"testingLogin","password":"testingLogin"}
+2024-11-12 13:30:31 [INFO]: ---
+2024-11-12 13:30:31 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:30:31 +0000] "POST /api/authentication/login HTTP/1.1" 200 213 "-" "-"
+2024-11-12 13:30:31 [INFO]: Method: POST
+2024-11-12 13:30:31 [INFO]: Path:   /api/authentication/change-password
+2024-11-12 13:30:31 [INFO]: Body:   {"username":"testingLogin","password":"","newPassword":""}
+2024-11-12 13:30:31 [INFO]: ---
+2024-11-12 13:30:31 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:30:31 +0000] "POST /api/authentication/change-password HTTP/1.1" 400 63 "-" "-"
+2024-11-12 13:30:31 [INFO]: Method: POST
+2024-11-12 13:30:31 [INFO]: Path:   /api/authentication/login
+2024-11-12 13:30:31 [INFO]: Body:   {"username":"testingLogin","password":"testingLogin"}
+2024-11-12 13:30:31 [INFO]: ---
+2024-11-12 13:30:31 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:30:31 +0000] "POST /api/authentication/login HTTP/1.1" 200 213 "-" "-"
+2024-11-12 13:30:31 [INFO]: Method: POST
+2024-11-12 13:30:31 [INFO]: Path:   /api/authentication/change-password
+2024-11-12 13:30:31 [INFO]: Body:   {"username":"wrong","password":"testingLogin","newPassword":"testingLogin"}
+2024-11-12 13:30:31 [INFO]: ---
+2024-11-12 13:30:31 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:30:31 +0000] "POST /api/authentication/change-password HTTP/1.1" 403 49 "-" "-"
+2024-11-12 13:35:18 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:35:19 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:35:19 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:35:19 [INFO]: Method: POST
+2024-11-12 13:35:19 [INFO]: Method: GET
+2024-11-12 13:35:19 [INFO]: Path:   /api/authentication/register/
+2024-11-12 13:35:19 [INFO]: Body:   {}
+2024-11-12 13:35:19 [INFO]: ---
+2024-11-12 13:35:19 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:35:19 +0000] "POST /api/authentication/register/ HTTP/1.1" 400 286 "-" "-"
+2024-11-12 13:35:19 [INFO]: Path:   /api/test/
+2024-11-12 13:35:19 [INFO]: Body:   {}
+2024-11-12 13:35:19 [INFO]: ---
+2024-11-12 13:35:19 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:35:19 +0000] "GET /api/test/ HTTP/1.1" 200 289 "-" "-"
+2024-11-12 13:35:19 [INFO]: Method: POST
+2024-11-12 13:35:19 [INFO]: Path:   /api/authentication/register/
+2024-11-12 13:35:19 [INFO]: Body:   {"name":"abraham naiborhu","password":"10","username":"abraham"}
+2024-11-12 13:35:19 [INFO]: ---
+2024-11-12 13:35:19 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:35:19 +0000] "POST /api/authentication/register/ HTTP/1.1" 400 125 "-" "-"
+2024-11-12 13:35:19 [INFO]: Method: POST
+2024-11-12 13:35:19 [INFO]: Method: POST
+2024-11-12 13:35:19 [INFO]: Path:   /api/authentication/register/
+2024-11-12 13:35:19 [INFO]: Body:   {"name":"abraham naiborhu","password":"10","username":"ab"}
+2024-11-12 13:35:19 [INFO]: ---
+2024-11-12 13:35:19 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:35:19 +0000] "POST /api/authentication/register/ HTTP/1.1" 400 238 "-" "-"
+2024-11-12 13:35:19 [INFO]: Path:   /api/test/testDatabase
+2024-11-12 13:35:19 [INFO]: Body:   {"description":"Success"}
+2024-11-12 13:35:19 [INFO]: ---
+2024-11-12 13:35:19 [INFO]: Method: POST
+2024-11-12 13:35:19 [INFO]: Path:   /api/authentication/register
+2024-11-12 13:35:19 [INFO]: Body:   {"name":"abraham naiborhu","password":"100000","username":"abraham"}
+2024-11-12 13:35:19 [INFO]: ---
+2024-11-12 13:35:19 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:35:19 +0000] "POST /api/authentication/register HTTP/1.1" 400 63 "-" "-"
+2024-11-12 13:35:19 [INFO]: Method: POST
+2024-11-12 13:35:19 [INFO]: Path:   /api/authentication/register
+2024-11-12 13:35:19 [INFO]: Body:   {"name":"testingUser","password":"testingUser","username":"testingUser"}
+2024-11-12 13:35:19 [INFO]: ---
+2024-11-12 13:35:19 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:35:19 +0000] "POST /api/authentication/register HTTP/1.1" 201 79 "-" "-"
+2024-11-12 13:35:19 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:35:19 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:35:19 +0000] "POST /api/test/testDatabase HTTP/1.1" 200 55 "-" "-"
+2024-11-12 13:35:19 [INFO]: Method: POST
+2024-11-12 13:35:19 [INFO]: Path:   /api/test/testDatabase
+2024-11-12 13:35:19 [INFO]: Body:   {"description":""}
+2024-11-12 13:35:19 [INFO]: ---
+2024-11-12 13:35:19 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:35:19 +0000] "POST /api/test/testDatabase HTTP/1.1" 400 39 "-" "-"
+2024-11-12 13:35:19 [INFO]: Method: POST
+2024-11-12 13:35:19 [INFO]: Path:   /api/authentication/login
+2024-11-12 13:35:19 [INFO]: Body:   {"username":"hohoho","password":"testingUser"}
+2024-11-12 13:35:19 [INFO]: ---
+2024-11-12 13:35:19 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:35:19 +0000] "POST /api/authentication/login HTTP/1.1" 400 40 "-" "-"
+2024-11-12 13:35:19 [INFO]: Method: POST
+2024-11-12 13:35:19 [INFO]: Path:   /api/authentication/login
+2024-11-12 13:35:19 [INFO]: Body:   {"username":"testingLogin","password":"nonono"}
+2024-11-12 13:35:19 [INFO]: ---
+2024-11-12 13:35:19 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:35:19 +0000] "POST /api/authentication/login HTTP/1.1" 400 40 "-" "-"
+2024-11-12 13:35:19 [INFO]: Method: POST
+2024-11-12 13:35:19 [INFO]: Path:   /api/authentication/login
+2024-11-12 13:35:19 [INFO]: Body:   {"username":"testingLogin","password":"testingLogin"}
+2024-11-12 13:35:19 [INFO]: ---
+2024-11-12 13:35:19 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:35:19 +0000] "POST /api/authentication/login HTTP/1.1" 200 213 "-" "-"
+2024-11-12 13:35:19 [INFO]: Method: POST
+2024-11-12 13:35:19 [INFO]: Path:   /api/authentication/change-password
+2024-11-12 13:35:19 [INFO]: Body:   {}
+2024-11-12 13:35:19 [INFO]: ---
+2024-11-12 13:35:19 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:35:19 +0000] "POST /api/authentication/change-password HTTP/1.1" 401 24 "-" "-"
+2024-11-12 13:35:19 [INFO]: Method: POST
+2024-11-12 13:35:19 [INFO]: Path:   /api/authentication/change-password
+2024-11-12 13:35:19 [INFO]: Body:   {"username":"testingLogin","password":"testingLogin","newPassword":"testingLogin2"}
+2024-11-12 13:35:19 [INFO]: ---
+2024-11-12 13:35:19 [ERROR]: Invalid token: jwt malformed
+2024-11-12 13:35:19 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:35:19 +0000] "POST /api/authentication/change-password HTTP/1.1" 401 25 "-" "-"
+2024-11-12 13:35:19 [INFO]: Method: POST
+2024-11-12 13:35:19 [INFO]: Path:   /api/authentication/login
+2024-11-12 13:35:19 [INFO]: Body:   {"username":"testingLogin","password":"testingLogin"}
+2024-11-12 13:35:19 [INFO]: ---
+2024-11-12 13:35:19 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:35:19 +0000] "POST /api/authentication/login HTTP/1.1" 200 213 "-" "-"
+2024-11-12 13:35:19 [INFO]: Method: POST
+2024-11-12 13:35:19 [INFO]: Path:   /api/authentication/change-password
+2024-11-12 13:35:19 [INFO]: Body:   {"username":"testingLogin","password":"","newPassword":""}
+2024-11-12 13:35:19 [INFO]: ---
+2024-11-12 13:35:19 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:35:19 +0000] "POST /api/authentication/change-password HTTP/1.1" 400 63 "-" "-"
+2024-11-12 13:35:19 [INFO]: Method: POST
+2024-11-12 13:35:19 [INFO]: Path:   /api/authentication/login
+2024-11-12 13:35:19 [INFO]: Body:   {"username":"testingLogin","password":"testingLogin"}
+2024-11-12 13:35:19 [INFO]: ---
+2024-11-12 13:35:19 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:35:19 +0000] "POST /api/authentication/login HTTP/1.1" 200 213 "-" "-"
+2024-11-12 13:35:19 [INFO]: Method: POST
+2024-11-12 13:35:19 [INFO]: Path:   /api/authentication/change-password
+2024-11-12 13:35:19 [INFO]: Body:   {"username":"wrong","password":"testingLogin","newPassword":"testingLogin"}
+2024-11-12 13:35:19 [INFO]: ---
+2024-11-12 13:35:19 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:35:19 +0000] "POST /api/authentication/change-password HTTP/1.1" 403 49 "-" "-"
+2024-11-12 13:35:54 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:35:54 [INFO]: Server running on port 3003
+2024-11-12 13:35:56 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:35:56 [INFO]: Server running on port 3003
+2024-11-12 13:36:07 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:36:07 [INFO]: Server running on port 3003
+2024-11-12 13:36:11 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:36:11 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:36:11 [INFO]: Method: POST
+2024-11-12 13:36:11 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:36:11 [INFO]: Path:   /api/authentication/register/
+2024-11-12 13:36:11 [INFO]: Body:   {}
+2024-11-12 13:36:11 [INFO]: ---
+2024-11-12 13:36:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:36:11 +0000] "POST /api/authentication/register/ HTTP/1.1" 400 286 "-" "-"
+2024-11-12 13:36:11 [INFO]: Method: GET
+2024-11-12 13:36:11 [INFO]: Path:   /api/test/
+2024-11-12 13:36:11 [INFO]: Body:   {}
+2024-11-12 13:36:11 [INFO]: ---
+2024-11-12 13:36:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:36:11 +0000] "GET /api/test/ HTTP/1.1" 200 289 "-" "-"
+2024-11-12 13:36:11 [INFO]: Method: POST
+2024-11-12 13:36:11 [INFO]: Path:   /api/authentication/register/
+2024-11-12 13:36:11 [INFO]: Body:   {"name":"abraham naiborhu","password":"10","username":"abraham"}
+2024-11-12 13:36:11 [INFO]: ---
+2024-11-12 13:36:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:36:11 +0000] "POST /api/authentication/register/ HTTP/1.1" 400 125 "-" "-"
+2024-11-12 13:36:11 [INFO]: Method: POST
+2024-11-12 13:36:11 [INFO]: Path:   /api/authentication/register/
+2024-11-12 13:36:11 [INFO]: Body:   {"name":"abraham naiborhu","password":"10","username":"ab"}
+2024-11-12 13:36:11 [INFO]: ---
+2024-11-12 13:36:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:36:11 +0000] "POST /api/authentication/register/ HTTP/1.1" 400 238 "-" "-"
+2024-11-12 13:36:11 [INFO]: Method: POST
+2024-11-12 13:36:11 [INFO]: Method: POST
+2024-11-12 13:36:11 [INFO]: Path:   /api/authentication/register
+2024-11-12 13:36:11 [INFO]: Body:   {"name":"abraham naiborhu","password":"100000","username":"abraham"}
+2024-11-12 13:36:11 [INFO]: ---
+2024-11-12 13:36:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:36:11 +0000] "POST /api/authentication/register HTTP/1.1" 400 63 "-" "-"
+2024-11-12 13:36:11 [INFO]: Path:   /api/test/testDatabase
+2024-11-12 13:36:11 [INFO]: Body:   {"description":"Success"}
+2024-11-12 13:36:11 [INFO]: ---
+2024-11-12 13:36:11 [INFO]: Method: POST
+2024-11-12 13:36:11 [INFO]: Path:   /api/authentication/register
+2024-11-12 13:36:11 [INFO]: Body:   {"name":"testingUser","password":"testingUser","username":"testingUser"}
+2024-11-12 13:36:11 [INFO]: ---
+2024-11-12 13:36:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:36:11 +0000] "POST /api/authentication/register HTTP/1.1" 201 79 "-" "-"
+2024-11-12 13:36:11 [INFO]: Method: POST
+2024-11-12 13:36:11 [INFO]: Path:   /api/authentication/login
+2024-11-12 13:36:11 [INFO]: Body:   {}
+2024-11-12 13:36:11 [INFO]: ---
+2024-11-12 13:36:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:36:11 +0000] "POST /api/authentication/login HTTP/1.1" 400 46 "-" "-"
+2024-11-12 13:36:11 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:36:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:36:11 +0000] "POST /api/test/testDatabase HTTP/1.1" 200 55 "-" "-"
+2024-11-12 13:36:11 [INFO]: Method: POST
+2024-11-12 13:36:11 [INFO]: Path:   /api/test/testDatabase
+2024-11-12 13:36:11 [INFO]: Body:   {"description":""}
+2024-11-12 13:36:11 [INFO]: ---
+2024-11-12 13:36:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:36:11 +0000] "POST /api/test/testDatabase HTTP/1.1" 400 39 "-" "-"
+2024-11-12 13:36:11 [INFO]: Method: POST
+2024-11-12 13:36:11 [INFO]: Path:   /api/authentication/login
+2024-11-12 13:36:11 [INFO]: Body:   {"username":"hohoho","password":"testingUser"}
+2024-11-12 13:36:11 [INFO]: ---
+2024-11-12 13:36:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:36:11 +0000] "POST /api/authentication/login HTTP/1.1" 400 40 "-" "-"
+2024-11-12 13:36:11 [INFO]: Method: POST
+2024-11-12 13:36:11 [INFO]: Path:   /api/authentication/login
+2024-11-12 13:36:11 [INFO]: Body:   {"username":"testingLogin","password":"nonono"}
+2024-11-12 13:36:11 [INFO]: ---
+2024-11-12 13:36:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:36:11 +0000] "POST /api/authentication/login HTTP/1.1" 400 40 "-" "-"
+2024-11-12 13:36:11 [INFO]: Method: POST
+2024-11-12 13:36:11 [INFO]: Path:   /api/authentication/login
+2024-11-12 13:36:11 [INFO]: Body:   {"username":"testingLogin","password":"testingLogin"}
+2024-11-12 13:36:11 [INFO]: ---
+2024-11-12 13:36:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:36:11 +0000] "POST /api/authentication/login HTTP/1.1" 200 213 "-" "-"
+2024-11-12 13:36:11 [INFO]: Method: POST
+2024-11-12 13:36:11 [INFO]: Path:   /api/authentication/change-password
+2024-11-12 13:36:11 [INFO]: Body:   {}
+2024-11-12 13:36:11 [INFO]: ---
+2024-11-12 13:36:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:36:11 +0000] "POST /api/authentication/change-password HTTP/1.1" 401 24 "-" "-"
+2024-11-12 13:36:11 [INFO]: Method: POST
+2024-11-12 13:36:11 [INFO]: Path:   /api/authentication/change-password
+2024-11-12 13:36:11 [INFO]: Body:   {"username":"testingLogin","password":"testingLogin","newPassword":"testingLogin2"}
+2024-11-12 13:36:11 [INFO]: ---
+2024-11-12 13:36:11 [ERROR]: Invalid token: jwt malformed
+2024-11-12 13:36:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:36:11 +0000] "POST /api/authentication/change-password HTTP/1.1" 401 25 "-" "-"
+2024-11-12 13:36:11 [INFO]: Method: POST
+2024-11-12 13:36:11 [INFO]: Path:   /api/authentication/login
+2024-11-12 13:36:11 [INFO]: Body:   {"username":"testingLogin","password":"testingLogin"}
+2024-11-12 13:36:11 [INFO]: ---
+2024-11-12 13:36:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:36:11 +0000] "POST /api/authentication/login HTTP/1.1" 200 213 "-" "-"
+2024-11-12 13:36:11 [INFO]: Method: POST
+2024-11-12 13:36:11 [INFO]: Path:   /api/authentication/change-password
+2024-11-12 13:36:11 [INFO]: Body:   {"username":"testingLogin","password":"","newPassword":""}
+2024-11-12 13:36:11 [INFO]: ---
+2024-11-12 13:36:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:36:11 +0000] "POST /api/authentication/change-password HTTP/1.1" 400 63 "-" "-"
+2024-11-12 13:36:11 [INFO]: Method: POST
+2024-11-12 13:36:11 [INFO]: Path:   /api/authentication/login
+2024-11-12 13:36:11 [INFO]: Body:   {"username":"testingLogin","password":"testingLogin"}
+2024-11-12 13:36:11 [INFO]: ---
+2024-11-12 13:36:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:36:11 +0000] "POST /api/authentication/login HTTP/1.1" 200 213 "-" "-"
+2024-11-12 13:36:11 [INFO]: Method: POST
+2024-11-12 13:36:11 [INFO]: Path:   /api/authentication/change-password
+2024-11-12 13:36:11 [INFO]: Body:   {"username":"wrong","password":"testingLogin","newPassword":"testingLogin"}
+2024-11-12 13:36:11 [INFO]: ---
+2024-11-12 13:36:11 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:06:36:11 +0000] "POST /api/authentication/change-password HTTP/1.1" 403 49 "-" "-"
+2024-11-12 13:36:44 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:36:44 [INFO]: Server running on port 3003
+2024-11-12 13:36:48 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:36:48 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:36:48 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:36:49 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:36:49 [ERROR]: Invalid token: jwt malformed
+2024-11-12 13:37:11 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:37:11 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:37:11 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:37:11 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:37:12 [ERROR]: Invalid token: jwt malformed
+2024-11-12 13:38:38 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:38:38 [INFO]: Server running on port 3003
+2024-11-12 13:38:55 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:38:55 [INFO]: Server running on port 3003
+2024-11-12 13:39:02 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:39:02 [INFO]: Server running on port 3003
+2024-11-12 13:39:06 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:39:06 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:39:06 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:39:06 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:39:07 [ERROR]: Invalid token: jwt malformed
+2024-11-12 13:39:27 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:39:28 [INFO]: Server running on port 3003
+2024-11-12 13:39:30 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:39:30 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:40:01 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:40:01 [INFO]: Server running on port 3003
+2024-11-12 13:40:02 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:40:02 [INFO]: Server running on port 3003
+2024-11-12 13:40:06 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:40:06 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:40:06 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:40:06 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:40:07 [ERROR]: Invalid token: jwt malformed
+2024-11-12 13:46:27 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:46:27 [INFO]: Server running on port 3003
+2024-11-12 13:46:45 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:46:45 [INFO]: Server running on port 3003
+2024-11-12 13:46:57 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:46:57 [INFO]: Server running on port 3003
+2024-11-12 13:47:00 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:47:00 [INFO]: Server running on port 3003
+2024-11-12 13:47:02 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:47:02 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:47:02 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:47:02 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:47:03 [ERROR]: Invalid token: jwt malformed
+2024-11-12 13:47:50 [ERROR]: Expected double-quoted property name in JSON at position 95
+2024-11-12 13:49:09 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:49:09 [INFO]: Server running on port 3003
+2024-11-12 13:49:29 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:49:29 [INFO]: Server running on port 3003
+2024-11-12 13:49:45 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:49:45 [INFO]: Server running on port 3003
+2024-11-12 13:49:49 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:49:49 [INFO]: Server running on port 3003
+2024-11-12 13:49:52 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:49:52 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:49:52 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:49:53 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:49:53 [ERROR]: Invalid token: jwt malformed
+2024-11-12 13:52:40 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:52:40 [INFO]: Server running on port 3003
+2024-11-12 13:53:06 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:53:06 [INFO]: Server running on port 3003
+2024-11-12 13:53:22 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:53:22 [INFO]: Server running on port 3003
+2024-11-12 13:53:32 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:53:32 [INFO]: Server running on port 3003
+2024-11-12 13:53:34 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:53:34 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:53:34 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:53:34 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:53:35 [ERROR]: Invalid token: jwt malformed
+2024-11-12 13:54:38 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:54:38 [INFO]: Server running on port 3003
+2024-11-12 13:54:42 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:54:42 [INFO]: Server running on port 3003
+2024-11-12 13:54:43 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:54:44 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:54:44 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:54:44 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:54:44 [ERROR]: Invalid token: jwt malformed
+2024-11-12 13:54:57 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:54:57 [INFO]: Server running on port 3003
+2024-11-12 13:55:09 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:55:09 [INFO]: Server running on port 3003
+2024-11-12 13:55:11 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:55:11 [INFO]: Server running on port 3003
+2024-11-12 13:55:54 [ERROR]: Expected property name or '}' in JSON at position 13
+2024-11-12 13:56:37 [ERROR]: Expected property name or '}' in JSON at position 13
+2024-11-12 13:56:45 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:57:06 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:57:06 [INFO]: Server running on port 3003
+2024-11-12 13:57:27 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:57:27 [INFO]: Server running on port 3003
+2024-11-12 13:57:31 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:57:31 [INFO]: Server running on port 3003
+2024-11-12 13:57:35 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:57:35 [INFO]: Server running on port 3003
+2024-11-12 13:57:37 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:57:37 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:57:37 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:57:37 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:57:38 [ERROR]: Invalid token: jwt malformed
+2024-11-12 13:58:06 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:58:30 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:58:30 [INFO]: Server running on port 3003
+2024-11-12 13:58:34 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:58:34 [INFO]: Connecting to PostgreSQL at
+2024-11-12 13:58:34 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:58:34 [INFO]: Connected to the PostgreSQL database
+2024-11-12 13:58:34 [ERROR]: Invalid token: jwt malformed
+2024-11-12 14:05:03 [INFO]: Connected to the PostgreSQL database
+2024-11-12 14:05:40 [INFO]: Connected to the PostgreSQL database
+2024-11-12 14:05:44 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:05:44 [INFO]: Server running on port 3003
+2024-11-12 14:05:49 [INFO]: Connected to the PostgreSQL database
+2024-11-12 14:06:06 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:06:06 [INFO]: Server running on port 3003
+2024-11-12 14:07:43 [ERROR]: Expected property name or '}' in JSON at position 13
+2024-11-12 14:08:10 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:08:10 [INFO]: Server running on port 3003
+2024-11-12 14:08:13 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:08:13 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:08:13 [INFO]: Connected to the PostgreSQL database
+2024-11-12 14:08:13 [INFO]: Connected to the PostgreSQL database
+2024-11-12 14:08:14 [ERROR]: Invalid token: jwt malformed
+2024-11-12 14:08:32 [ERROR]: Invalid token: jwt expired
+2024-11-12 14:08:44 [INFO]: Connected to the PostgreSQL database
+2024-11-12 14:09:16 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:09:16 [INFO]: Server running on port 3003
+2024-11-12 14:09:19 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:09:19 [INFO]: Server running on port 3003
+2024-11-12 14:09:20 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:09:20 [INFO]: Server running on port 3003
+2024-11-12 14:09:26 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:09:26 [INFO]: Connected to the PostgreSQL database
+2024-11-12 14:09:26 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:09:26 [INFO]: Connected to the PostgreSQL database
+2024-11-12 14:09:26 [ERROR]: Invalid token: jwt malformed
+2024-11-12 14:09:33 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:09:33 [INFO]: Server running on port 3003
+2024-11-12 14:09:54 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:09:54 [INFO]: Server running on port 3003
+2024-11-12 14:09:56 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:09:56 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:09:56 [INFO]: Connected to the PostgreSQL database
+2024-11-12 14:09:56 [INFO]: Connected to the PostgreSQL database
+2024-11-12 14:09:56 [ERROR]: Invalid token: jwt malformed
+2024-11-12 14:10:24 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:10:24 [INFO]: Server running on port 3003
+2024-11-12 14:10:30 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:10:30 [INFO]: Server running on port 3003
+2024-11-12 14:10:59 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:10:59 [INFO]: Server running on port 3003
+2024-11-12 14:11:01 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:11:01 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:11:01 [INFO]: Connected to the PostgreSQL database
+2024-11-12 14:11:01 [INFO]: Connected to the PostgreSQL database
+2024-11-12 14:11:02 [ERROR]: Invalid token: jwt malformed
+2024-11-12 14:11:11 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:11:11 [INFO]: Server running on port 3003

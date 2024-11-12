@@ -1,12 +1,11 @@
-const express = require("express");
-const testRouter = express.Router();
-const logger = require("../utils/logger");
-const testModel = require("../models/test.model");
-testRouter.get("/", async (req, res, next) => {
+const testModel = require("./test.model");
+const logger = require("../../middleware/logger");
+
+const getTestPage = async (req, res, next) => {
   try {
     let today = new Date();
-    return res.status(200).send(`
-           <html>
+    let body = `
+    <html>
         <head>
           <title>Test API</title>
         </head>
@@ -16,18 +15,18 @@ testRouter.get("/", async (req, res, next) => {
           <p>Purpose: TODOS API</p>
         </body>
       </html>
-        `);
+    `;
+    return res.status(200).send(body);
   } catch (exception) {
     next(exception);
   }
-});
+};
 
-testRouter.post("/testDatabase", async (req, res, next) => {
+const testDatabase = async (req, res, next) => {
   try {
-    console.log(req.body);
-
     const { description } = req.body;
-    if (description.trim() === "" || !description) {
+
+    if (!description || description.trim() === "") {
       return res.status(400).json({ error: "Description cannot be empty" });
     }
 
@@ -38,6 +37,9 @@ testRouter.post("/testDatabase", async (req, res, next) => {
     logger.error(exception);
     next(exception);
   }
-});
+};
 
-module.exports = testRouter;
+module.exports = {
+  getTestPage,
+  testDatabase,
+};
