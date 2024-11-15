@@ -21,7 +21,7 @@ const getTodo = async (userId, limit, offset) => {
     SELECT id, title, description, is_completed, is_deleted, due_date, priority, created_at, updated_at
     FROM todos
     WHERE user_id = $1 AND is_deleted = FALSE
-    ORDER BY created_at DESC
+    ORDER BY ID ASC
     LIMIT $2 OFFSET $3
     `,
     [userId, limit, offset]

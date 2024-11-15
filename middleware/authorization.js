@@ -4,7 +4,6 @@ const jwt = require("jsonwebtoken");
 const logger = require("./logger");
 
 const authorize = (req, res, next) => {
-  console.log("into the authorize");
   const authHeader = req.headers.authorization;
   if (!authHeader || !authHeader.startsWith("Bearer ")) {
     return res.status(401).json({ error: "Unauthorized" });
@@ -14,7 +13,6 @@ const authorize = (req, res, next) => {
   try {
     const decoded = jwt.verify(token, process.env.SECRET);
     req.user = decoded;
-    console.log("req.user", req.user);
     next();
   } catch (error) {
     logger.error("Invalid token:", error);

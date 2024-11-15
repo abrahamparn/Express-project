@@ -19,9 +19,8 @@ const createTodo = async (req, res, next) => {
     const userId = req.user.id;
     const { title, description = "", due_date = null, priority = 0 } = req.body;
 
-    const formattedDueDate = due_date ? moment(due_date, "MM/DD/YYYY").format("YYYY-MM-DD") : null;
-    console.log("formattedDueDate", formattedDueDate);
-    console.log("beforetheformat", due_date);
+    const formattedDueDate = due_date ? moment(due_date, "DD/MM/YYYY").format("YYYY-MM-DD") : null;
+
     const newTodo = await todoModel.createTodo({
       userId,
       title,
@@ -32,7 +31,7 @@ const createTodo = async (req, res, next) => {
 
     // Change the date for due-date
     newTodo.due_date = newTodo.due_date
-      ? moment(newTodo.due_date, "MM/DD/YYYY").format("YYYY-MM-DD")
+      ? moment(newTodo.due_date, "DD/MM/YYYY").format("YYYY-MM-DD")
       : null;
 
     res.status(201).json({ success: true, todo: newTodo });

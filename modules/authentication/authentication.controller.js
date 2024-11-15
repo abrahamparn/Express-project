@@ -39,7 +39,6 @@ const login = async (req, res, next) => {
     }
 
     const userExists = await userModel.checkUsername(username);
-    console.log("userExists", userExists);
     if (!userExists) {
       return res.status(400).json({ error: "Invalid username or password" });
     }
