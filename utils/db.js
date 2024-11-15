@@ -1,4 +1,5 @@
 const { Pool } = require("pg");
+
 const config = require("./config");
 const logger = require("../middleware/logger");
 

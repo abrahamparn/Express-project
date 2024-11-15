@@ -7,7 +7,8 @@
     "test": "cross-env NODE_ENV=test node --test",
     "dev": "cross-env NODE_ENV=test nodemon api/server.js",
     "start": "cross-env NODE_ENV=production node api/server.js",
-    "build:ui": "cd ./documentation && @powershell Remove-Item -Recurse -Force dist && npm run build"
+    "build:ui": "cd ./documentation && @powershell Remove-Item -Recurse -Force dist && npm run build",
+    "test:todos": "cross-env NODE_ENV=test node --test ./modules/todos/todo.test.js"
   },
   "author": "abraham",
   "license": "ISC",
@@ -25,6 +26,7 @@
     "express-validator": "^7.2.0",
     "helmet": "^8.0.0",
     "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
     "morgan": "^1.10.0",
     "pg": "^8.13.1",
     "winston": "^3.17.0",

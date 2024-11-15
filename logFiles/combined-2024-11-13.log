@@ -1,0 +1,14 @@
+2024-11-13 08:51:46 [INFO]: Connecting to PostgreSQL at
+2024-11-13 08:51:46 [INFO]: Server running on port 3003
+2024-11-13 08:52:58 [INFO]: Connecting to PostgreSQL at
+2024-11-13 08:52:58 [INFO]: Server running on port 3003
+2024-11-13 08:54:26 [INFO]: Connecting to PostgreSQL at
+2024-11-13 08:54:26 [INFO]: Server running on port 3003
+2024-11-13 08:54:54 [INFO]: Connecting to PostgreSQL at
+2024-11-13 08:54:54 [INFO]: Server running on port 3003
+2024-11-13 08:54:56 [INFO]: Connecting to PostgreSQL at
+2024-11-13 08:54:56 [INFO]: Server running on port 3003
+2024-11-13 08:55:06 [ERROR]: Invalid token: jwt expired
+2024-11-13 08:55:20 [INFO]: Connected to the PostgreSQL database
+2024-11-13 09:06:52 [INFO]: Connecting to PostgreSQL at
+2024-11-13 09:06:52 [INFO]: Server running on port 3003

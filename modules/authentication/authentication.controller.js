@@ -62,7 +62,6 @@ const login = async (req, res, next) => {
 // Controller Function: Change Password
 const changePassword = async (req, res, next) => {
   try {
-    console.log("into the change password");
     const { username = "", password = "", newPassword = "" } = req.body;
 
     if (!username.trim() || !password.trim() || !newPassword.trim()) {

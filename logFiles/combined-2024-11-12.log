@@ -684,3 +684,154 @@
 2024-11-12 14:11:02 [ERROR]: Invalid token: jwt malformed
 2024-11-12 14:11:11 [INFO]: Connecting to PostgreSQL at
 2024-11-12 14:11:11 [INFO]: Server running on port 3003
+2024-11-12 14:21:44 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:21:44 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:21:44 [INFO]: Connected to the PostgreSQL database
+2024-11-12 14:21:44 [INFO]: Connected to the PostgreSQL database
+2024-11-12 14:21:45 [ERROR]: Invalid token: jwt malformed
+2024-11-12 14:31:10 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:31:10 [INFO]: Server running on port 3003
+2024-11-12 14:31:16 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:31:16 [INFO]: Connected to the PostgreSQL database
+2024-11-12 14:31:16 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:31:16 [INFO]: Connected to the PostgreSQL database
+2024-11-12 14:31:17 [ERROR]: Invalid token: jwt malformed
+2024-11-12 14:31:25 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:31:25 [INFO]: Server running on port 3003
+2024-11-12 14:31:32 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:31:32 [INFO]: Connected to the PostgreSQL database
+2024-11-12 14:31:32 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:31:32 [INFO]: Connected to the PostgreSQL database
+2024-11-12 14:31:32 [ERROR]: Invalid token: jwt malformed
+2024-11-12 14:31:35 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:31:35 [INFO]: Server running on port 3003
+2024-11-12 14:32:48 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:32:48 [INFO]: Server running on port 3003
+2024-11-12 14:32:57 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:32:57 [INFO]: Server running on port 3003
+2024-11-12 14:33:32 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:33:32 [INFO]: Server running on port 3003
+2024-11-12 14:33:38 [ERROR]: todoModel.getTodos is not a function
+2024-11-12 14:33:38 [ERROR]: todoModel.getTodos is not a function
+2024-11-12 14:33:48 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:33:48 [INFO]: Server running on port 3003
+2024-11-12 14:33:52 [ERROR]: todoModel.getTodos is not a function
+2024-11-12 14:33:52 [ERROR]: todoModel.getTodos is not a function
+2024-11-12 14:34:30 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:34:30 [INFO]: Server running on port 3003
+2024-11-12 14:35:54 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:35:54 [INFO]: Server running on port 3003
+2024-11-12 14:36:04 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:36:04 [INFO]: Server running on port 3003
+2024-11-12 14:36:07 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:36:07 [INFO]: Server running on port 3003
+2024-11-12 14:36:12 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:36:12 [INFO]: Server running on port 3003
+2024-11-12 14:36:15 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:36:15 [INFO]: Server running on port 3003
+2024-11-12 14:36:17 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:36:17 [INFO]: Server running on port 3003
+2024-11-12 14:36:31 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:36:31 [INFO]: Server running on port 3003
+2024-11-12 14:36:44 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:36:44 [INFO]: Server running on port 3003
+2024-11-12 14:37:01 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:37:01 [INFO]: Server running on port 3003
+2024-11-12 14:38:00 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:38:00 [INFO]: Server running on port 3003
+2024-11-12 14:39:18 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:39:18 [INFO]: Server running on port 3003
+2024-11-12 14:40:17 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:40:17 [INFO]: Method: GET
+2024-11-12 14:40:17 [INFO]: Path:   /api/todo/test/
+2024-11-12 14:40:17 [INFO]: Body:   {}
+2024-11-12 14:40:17 [INFO]: ---
+2024-11-12 14:40:17 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:07:40:17 +0000] "GET /api/todo/test/ HTTP/1.1" 404 28 "-" "-"
+2024-11-12 14:40:48 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:40:48 [INFO]: Server running on port 3003
+2024-11-12 14:40:50 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:40:50 [INFO]: Method: GET
+2024-11-12 14:40:50 [INFO]: Path:   /api/todo/test/
+2024-11-12 14:40:50 [INFO]: Body:   {}
+2024-11-12 14:40:50 [INFO]: ---
+2024-11-12 14:40:50 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:07:40:50 +0000] "GET /api/todo/test/ HTTP/1.1" 404 28 "-" "-"
+2024-11-12 14:41:00 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:41:00 [INFO]: Server running on port 3003
+2024-11-12 14:41:01 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:41:01 [INFO]: Method: GET
+2024-11-12 14:41:01 [INFO]: Path:   /api/todos/test/
+2024-11-12 14:41:01 [INFO]: Body:   {}
+2024-11-12 14:41:01 [INFO]: ---
+2024-11-12 14:41:01 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:07:41:01 +0000] "GET /api/todos/test/ HTTP/1.1" 401 24 "-" "-"
+2024-11-12 14:41:03 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:41:03 [INFO]: Method: GET
+2024-11-12 14:41:03 [INFO]: Path:   /api/todos/test/
+2024-11-12 14:41:03 [INFO]: Body:   {}
+2024-11-12 14:41:03 [INFO]: ---
+2024-11-12 14:41:03 [INFO]: ::ffff:127.0.0.1 - - [12/Nov/2024:07:41:03 +0000] "GET /api/todos/test/ HTTP/1.1" 401 24 "-" "-"
+2024-11-12 14:41:13 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:41:13 [INFO]: Server running on port 3003
+2024-11-12 14:41:44 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:41:44 [INFO]: Server running on port 3003
+2024-11-12 14:42:18 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:42:19 [INFO]: Server running on port 3003
+2024-11-12 14:43:04 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:43:04 [INFO]: Server running on port 3003
+2024-11-12 14:43:14 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:43:14 [INFO]: Server running on port 3003
+2024-11-12 14:43:30 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:43:30 [INFO]: Server running on port 3003
+2024-11-12 14:43:34 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:43:34 [INFO]: Server running on port 3003
+2024-11-12 14:43:36 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:43:36 [INFO]: Server running on port 3003
+2024-11-12 14:43:44 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:48:36 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:48:36 [INFO]: Server running on port 3003
+2024-11-12 14:48:37 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:51:25 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:51:25 [INFO]: Server running on port 3003
+2024-11-12 14:54:28 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:54:28 [INFO]: Server running on port 3003
+2024-11-12 14:54:30 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:55:27 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:55:27 [INFO]: Server running on port 3003
+2024-11-12 14:55:29 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:56:05 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:56:05 [INFO]: Server running on port 3003
+2024-11-12 14:56:07 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:56:26 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:56:41 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:56:41 [INFO]: Server running on port 3003
+2024-11-12 14:57:01 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:57:01 [INFO]: Server running on port 3003
+2024-11-12 14:57:03 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:58:41 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:59:05 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:59:05 [INFO]: Server running on port 3003
+2024-11-12 14:59:11 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:59:11 [INFO]: Connected to the PostgreSQL database
+2024-11-12 14:59:34 [INFO]: Connecting to PostgreSQL at
+2024-11-12 14:59:34 [INFO]: Server running on port 3003
+2024-11-12 15:00:43 [INFO]: Connecting to PostgreSQL at
+2024-11-12 15:00:43 [INFO]: Server running on port 3003
+2024-11-12 15:00:53 [INFO]: Connecting to PostgreSQL at
+2024-11-12 15:00:53 [INFO]: Server running on port 3003
+2024-11-12 15:01:06 [INFO]: Connecting to PostgreSQL at
+2024-11-12 15:01:06 [INFO]: Server running on port 3003
+2024-11-12 15:01:25 [INFO]: Connecting to PostgreSQL at
+2024-11-12 15:01:25 [INFO]: Server running on port 3003
+2024-11-12 15:01:30 [INFO]: Connecting to PostgreSQL at
+2024-11-12 15:01:30 [INFO]: Server running on port 3003
+2024-11-12 15:01:52 [INFO]: Connecting to PostgreSQL at
+2024-11-12 15:01:52 [INFO]: Server running on port 3003
+2024-11-12 15:02:01 [INFO]: Connecting to PostgreSQL at
+2024-11-12 15:02:01 [INFO]: Server running on port 3003
+2024-11-12 15:02:14 [INFO]: Connecting to PostgreSQL at
+2024-11-12 15:02:14 [INFO]: Server running on port 3003
+2024-11-12 15:02:20 [INFO]: Connecting to PostgreSQL at
+2024-11-12 15:02:20 [INFO]: Server running on port 3003
+2024-11-12 15:02:24 [INFO]: Connecting to PostgreSQL at
+2024-11-12 15:02:24 [INFO]: Server running on port 3003
+2024-11-12 15:02:27 [INFO]: Connecting to PostgreSQL at
+2024-11-12 15:02:27 [INFO]: Connected to the PostgreSQL database

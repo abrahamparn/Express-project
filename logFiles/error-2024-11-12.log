@@ -22,3 +22,10 @@
 2024-11-12 14:09:26 [ERROR]: Invalid token: jwt malformed
 2024-11-12 14:09:56 [ERROR]: Invalid token: jwt malformed
 2024-11-12 14:11:02 [ERROR]: Invalid token: jwt malformed
+2024-11-12 14:21:45 [ERROR]: Invalid token: jwt malformed
+2024-11-12 14:31:17 [ERROR]: Invalid token: jwt malformed
+2024-11-12 14:31:32 [ERROR]: Invalid token: jwt malformed
+2024-11-12 14:33:38 [ERROR]: todoModel.getTodos is not a function
+2024-11-12 14:33:38 [ERROR]: todoModel.getTodos is not a function
+2024-11-12 14:33:52 [ERROR]: todoModel.getTodos is not a function
+2024-11-12 14:33:52 [ERROR]: todoModel.getTodos is not a function

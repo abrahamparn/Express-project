@@ -1,4 +1,4 @@
-const db = require("../utils/db");
+const db = require("../../utils/db");
 
 const checkUsername = async (username) => {
   const result = await db.query(

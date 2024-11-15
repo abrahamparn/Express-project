@@ -28,8 +28,6 @@ describe("Test API testing", () => {
       .expect(200)
       .expect("Content-Type", /application\/json/);
 
-    console.log("response.body ", response.body);
-
     assert.deepStrictEqual(response.body, {
       status: "success",
       result: {

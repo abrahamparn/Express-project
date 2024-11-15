@@ -1,0 +1,14 @@
+2024-11-14 09:33:25 [ERROR]: res.stats is not a function
+2024-11-14 09:33:25 [ERROR]: res.stats is not a function
+2024-11-14 10:20:55 [ERROR]: Invalid token: jwt expired
+2024-11-14 10:38:24 [ERROR]: todoModel.getTodos is not a function
+2024-11-14 10:38:24 [ERROR]: todoModel.getTodos is not a function
+2024-11-14 10:38:43 [ERROR]: column "is_complete" does not exist
+2024-11-14 10:38:43 [ERROR]: column "is_complete" does not exist
+2024-11-14 11:16:31 [ERROR]: invalid input syntax for type bigint: "asdfasdf"
+2024-11-14 11:16:31 [ERROR]: invalid input syntax for type bigint: "asdfasdf"
+2024-11-14 11:19:58 [ERROR]: invalid input syntax for type bigint: "asdfasdf"
+2024-11-14 11:19:58 [ERROR]: invalid input syntax for type bigint: "asdfasdf"
+2024-11-14 11:47:16 [ERROR]: Invalid token: jwt expired
+2024-11-14 14:19:42 [ERROR]: log is not defined
+2024-11-14 14:19:42 [ERROR]: log is not defined
