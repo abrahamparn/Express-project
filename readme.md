@@ -113,7 +113,7 @@ Welcome to the **Todo API**! This is a RESTful API built with Node.js and Expres
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/todo_api.git
+   git clone https://github.com/abrahamparn/Express-project.git
    cd todo_api
    ```
 
