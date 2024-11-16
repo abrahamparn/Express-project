@@ -207,8 +207,8 @@ describe("TODOS API TESTING", () => {
         .expect("Content-Type", /application\/json/)
         .expect(200);
 
-      assert.strictEqual(response.body.todo[0].title, newTodo.title);
-      assert.strictEqual(response.body.todo[0].description, newTodo.description);
+      assert.strictEqual(response.body.todo.title, newTodo.title);
+      assert.strictEqual(response.body.todo.description, newTodo.description);
     });
 
     test("should not be able to retrieve a specific todo because of wrong id format", async () => {
