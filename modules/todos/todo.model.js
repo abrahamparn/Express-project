@@ -39,7 +39,7 @@ const getTodoById = async (userId, todoId) => {
     `,
     [userId, todoId]
   );
-  return result.rows;
+  return result.rows[0];
 };
 
 const updateTodo = async (userId, todoId, updates) => {

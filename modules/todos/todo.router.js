@@ -12,7 +12,6 @@ const {
 const router = express.Router();
 
 // Route: GET /api/todos
-// router.get("/", todoController.getTodos);
 router.get("/test", todoController.testTodos);
 router.post("/create", validateCreateTodo, todoController.createTodo);
 router.get("/", validateGetTodo, todoController.getTodo);

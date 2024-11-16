@@ -17,3 +17,7 @@
 2024-11-15 10:27:00 [ERROR]: Invalid token: jwt malformed
 2024-11-15 10:27:21 [ERROR]: Invalid token: jwt malformed
 2024-11-15 10:56:52 [ERROR]: Invalid token: jwt expired
+2024-11-15 11:03:47 [ERROR]: insert or update on table "todos" violates foreign key constraint "todos_user_id_fkey"
+2024-11-15 11:03:47 [ERROR]: Error: insert or update on table "todos" violates foreign key constraint "todos_user_id_fkey"
+2024-11-15 11:03:48 [ERROR]: Invalid token: jwt malformed
+2024-11-15 11:06:39 [ERROR]: Invalid token: jwt malformed

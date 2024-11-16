@@ -61,6 +61,12 @@ const getTodoById = async (req, res, next) => {
     const todoId = req.params.id;
 
     const todo = await todoModel.getTodoById(userId, todoId);
+
+    if (!todo) {
+      return res.status(404).json({
+        error: "Todo Not Found",
+      });
+    }
     return res.status(200).json({
       success: true,
       todo: todo,
@@ -115,7 +121,7 @@ const updateTodo = async (req, res, next) => {
     });
 
     if (!updatedTodo) {
-      return res.status(400).json({ error: "Todo not found or already deleted" });
+      return res.status(404).json({ error: "Todo not found or already deleted" });
     }
     res.status(200).json({ success: true, todo: updatedTodo });
   } catch (exception) {

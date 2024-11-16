@@ -8,7 +8,9 @@
     "dev": "cross-env NODE_ENV=test nodemon api/server.js",
     "start": "cross-env NODE_ENV=production node api/server.js",
     "build:ui": "cd ./documentation && @powershell Remove-Item -Recurse -Force dist && npm run build",
-    "test:todos": "cross-env NODE_ENV=test node --test ./modules/todos/todo.test.js"
+    "test:todos": "cross-env NODE_ENV=test node --test ./modules/todos/todo.test.js",
+    "test:authentication": "cross-env NODE_ENV=test node --test ./modules/authentication/authentication.test.js",
+    "test:test": "cross-env NODE_ENV=test node --test ./modules/test/test.test.js"
   },
   "author": "abraham",
   "license": "ISC",
