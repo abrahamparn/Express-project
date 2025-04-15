@@ -1,3 +1,0 @@
-2025-04-15 10:53:52 [ERROR]: relation "test_table" does not exist
-2025-04-15 10:53:52 [ERROR]: Error: relation "test_table" does not exist
-2025-04-15 10:56:39 [ERROR]: Invalid token: jwt expired
