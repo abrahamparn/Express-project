@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\Abraham Pardomuan N\\Desktop\\api\\Express-project\\logFiles\\.921bf08a5b74f429e53bf22fd8b6f4539fc42981-audit.json",
+    "files": [
+        {
+            "date": 1744689156596,
+            "name": "C:\\Users\\Abraham Pardomuan N\\Desktop\\api\\Express-project\\logFiles\\combined-2025-04-15.log",
+            "hash": "73285c308b5721c0fa19095ee810d2c1652e00fe95e9704a9198ebf4fd009aed"
+        }
+    ],
+    "hashType": "sha256"
+}

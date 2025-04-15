@@ -1,0 +1,19 @@
+2025-04-15 10:52:36 [INFO]: Connecting to PostgreSQL at
+2025-04-15 10:52:36 [INFO]: Server running on port 3003
+2025-04-15 10:53:06 [INFO]: Connecting to PostgreSQL at
+2025-04-15 10:53:06 [INFO]: Server running on port 3000
+2025-04-15 10:53:41 [INFO]: Connecting to PostgreSQL at
+2025-04-15 10:53:41 [INFO]: Server running on port 3003
+2025-04-15 10:53:52 [INFO]: Connected to the PostgreSQL database
+2025-04-15 10:53:52 [ERROR]: relation "test_table" does not exist
+2025-04-15 10:53:52 [ERROR]: Error: relation "test_table" does not exist
+2025-04-15 10:55:01 [INFO]: Connecting to PostgreSQL at
+2025-04-15 10:55:01 [INFO]: Server running on port 3000
+2025-04-15 10:55:15 [INFO]: Connecting to PostgreSQL at
+2025-04-15 10:55:15 [INFO]: Server running on port 3003
+2025-04-15 10:55:17 [INFO]: Connected to the PostgreSQL database
+2025-04-15 10:55:30 [INFO]: Connected to the PostgreSQL database
+2025-04-15 10:55:43 [INFO]: Connected to the PostgreSQL database
+2025-04-15 10:56:33 [INFO]: Connected to the PostgreSQL database
+2025-04-15 10:56:39 [ERROR]: Invalid token: jwt expired
+2025-04-15 10:56:51 [INFO]: Connected to the PostgreSQL database

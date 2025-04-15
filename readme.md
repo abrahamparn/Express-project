@@ -1,4 +1,4 @@
-# Todo API
+# ✅ Todo API – Secure Task Management Backend
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Node.js](https://img.shields.io/badge/node-%3E%3D14.0.0-brightgreen)
@@ -7,7 +7,9 @@
 ![Winston](https://img.shields.io/badge/winston-%3E%3D3.0.0-red.svg)
 ![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)
 
-## Table of Contents
+A robust and secure RESTful API for managing todo items. Built with **Node.js**, **Express.js**, **PostgreSQL**, and secured with **JWT authentication**. This project also features rate limiting, centralized logging, form validation, and full integration test coverage using **Supertest**.
+
+## 📚 Table of Contents
 
 1. [Introduction](#introduction)
 2. [Features](#features)
@@ -38,65 +40,52 @@
 
 ## Introduction
 
-Welcome to the **Todo API**! This is a RESTful API built with Node.js and Express.js that allows users to manage their todo items efficiently. It features user authentication, CRUD operations for todos, robust input validation, comprehensive logging, and thorough testing to ensure reliability and maintainability.
+This is a secure and scalable API project built from the ground up to manage todo tasks with user authentication and authorization. It's designed using best practices in Express.js architecture, with a clean modular structure and real-world functionality in mind.
 
 ---
 
 ## Features
 
-- **User Authentication:**
+### Authentication
 
-  - Register a new account.
-  - Login to obtain a JWT token.
-  - Change password securely.
+- User registration & login
+- Password change endpoint
+- JWT-secured routes
 
-- **Todo Management:**
+### Todo Management
 
-  - Create new todo items.
-  - Retrieve all todos with pagination.
-  - Retrieve specific todo by ID.
-  - Update existing todos.
-  - Soft-delete todos to maintain data integrity.
+- Create, update, retrieve, and delete todos
+- Pagination support
+- Soft-deletion strategy
 
-- **Security:**
+### Security
 
-  - JWT-based authentication.
-  - Input validation to prevent malformed data.
-  - Rate limiting to protect against brute-force attacks.
-  - Helmet for setting secure HTTP headers.
+- Helmet + Rate limiting
+- Express-validator middleware
+- Environment-based configuration
 
-- **Logging:**
+### Logging
 
-  - Detailed logging using Winston.
-  - HTTP request logging with Morgan.
+- Request logging with **Morgan**
+- Persistent logs via **Winston**
 
-- **Testing:**
-  - Automated tests using Supertest and Node's built-in test module.
+### Testing
+
+- Automated integration tests using Supertest
+- Custom test runners via `npm scripts`
 
 ---
 
 ## Technologies Used
 
-- **Backend:**
-
-  - [Node.js](https://nodejs.org/)
-  - [Express.js](https://expressjs.com/)
-  - [PostgreSQL](https://www.postgresql.org/)
-  - [JWT](https://jwt.io/)
-  - [Winston](https://github.com/winstonjs/winston)
-  - [Morgan](https://github.com/expressjs/morgan)
-  - [Express-Validator](https://express-validator.github.io/docs/)
-  - [Moment.js](https://momentjs.com/)
-
-- **Testing:**
-
-  - [Supertest](https://github.com/visionmedia/supertest)
-  - [Node Test Module](https://nodejs.org/api/test.html)
-
-- **Utilities:**
-  - [Dotenv](https://github.com/motdotla/dotenv)
-  - [Nodemon](https://nodemon.io/)
-  - [Cross-Env](https://github.com/kentcdodds/cross-env)
+- **Node.js**, **Express.js**
+- **PostgreSQL** (via `pg`)
+- **JWT** (jsonwebtoken)
+- **Winston**, **Morgan**
+- **Express-validator**
+- **Dotenv**, **Cross-env**, **Nodemon**
+- **Moment.js** for date handling
+- **Supertest** & native Node test runner
 
 ---
 
@@ -121,17 +110,12 @@ Welcome to the **Todo API**! This is a RESTful API built with Node.js and Expres
    ```bash
    npm install
    ```
-3. **Set Up Environment Variables:**
- <p>
-  Create a <code>.env</code> file in the root directory and configure the necessary environment
-  variables as described below.
-</p>
 
-## Environment Variables
+### Environment Variables
 
 <p>Create a <code>.env</code> file in the root directory with the following variables:</p>
-<pre>
-<div>env</div><code>
+
+```
 #Server Configuration
 PORT=3003
 SECRET=YOUR_JWT_SECRET_KEY
@@ -140,15 +124,13 @@ SECRET=YOUR_JWT_SECRET_KEY
 #Database Configuration
 TEST_POSTGRES_URI={CHANGE INTO YOUR OWN URI}
 PRODUCTION_POSTGRES_URI={CHANGE INTO YOUR OWN URI}
-
-</code>
-</pre>
+```
 
 ---
 
 ## Database Setup
 
-1. **Clone the Repository:**
+1. **Create Database**
 
    ```sql
    -- Connect to PostgreSQL using psql or any GUI tool.
@@ -200,7 +182,7 @@ Start the server in development mode with hot-reloading using `nodemon`:
 npm run dev
 ```
 
-**Note:** This runs the server with `NODE_ENV=test`. You can modify the `dev` script in `package.json` if needed.
+> Runs with NODE_ENV=test using nodemon.
 
 ### Production
 
@@ -218,7 +200,7 @@ The server will run on the port specified in the .env file (default is `3003`).
 
 #### Register
 
-- Endpoint: POST /api/authentication/register
+- Endpoint: POST `/api/authentication/register`
 - Description: Register a new user.
 - Headers: Content-Type: application/json
 - Body Parameters:
@@ -243,7 +225,7 @@ The server will run on the port specified in the .env file (default is `3003`).
 
 #### Login
 
-- Endpoint: POST /api/authentication/register
+- Endpoint: POST `/api/authentication/register`
 - Description: Register a new user.
 - Headers: Content-Type: application/json
 - Body Parameters:
@@ -267,7 +249,7 @@ The server will run on the port specified in the .env file (default is `3003`).
 
 #### Change Password
 
-- Endpoint: POST /api/authentication/change-password
+- Endpoint: POST `/api/authentication/change-password`
 - Description: Change the password of the authenticated user.
 - Headers:
 - Content-Type: application/json
@@ -301,7 +283,7 @@ The server will run on the port specified in the .env file (default is `3003`).
 
 #### Create Todo
 
-- Endpoint: POST /api/todos
+- Endpoint: POST `/api/todos`
 - Description: Create a new todo item.
 - Headers:
   - Content-Type: application/json
@@ -313,7 +295,7 @@ The server will run on the port specified in the .env file (default is `3003`).
   - priority (integer, optional): Non-negative integer, default is 0.
 - Responses:
 
-  - 201 Created: Todo successfully created.
+  - `201 Created`: Todo successfully created.
 
   ```
   {
@@ -332,7 +314,7 @@ The server will run on the port specified in the .env file (default is `3003`).
   }
   ```
 
-  - 400 Bad Request: Validation errors.
+  - `400 Bad Request`: Validation errors.
 
   ```
   {
@@ -350,7 +332,7 @@ The server will run on the port specified in the .env file (default is `3003`).
 
 #### Get All Todos
 
-- Endpoint: GET /api/todos
+- Endpoint: `GET /api/todos`
 - Description: Retrieve all todos for the authenticated user with pagination.
 - Headers:
   - Authorization: Bearer <JWT_TOKEN>
@@ -358,7 +340,7 @@ The server will run on the port specified in the .env file (default is `3003`).
   - page (integer, optional): Page number, default is 1.
   - limit (integer, optional): Number of todos per page, default is 10.
 - Responses:
-  - 200 OK: Returns a list of todos.
+  - `200 OK`: Returns a list of todos.
     ```
     {
       "todos": [
@@ -377,7 +359,7 @@ The server will run on the port specified in the .env file (default is `3003`).
       ]
     }
     ```
-  - 400 Bad Request: Invalid query parameters.
+  - `400 Bad Request`: Invalid query parameters.
     ```
     {
       "errors": [
@@ -394,14 +376,14 @@ The server will run on the port specified in the .env file (default is `3003`).
 
 #### Get Todo by ID
 
-- Endpoint: GET /api/todos/:id
+- Endpoint: `GET /api/todos/:id`
 - Description: Retrieve a specific todo by its ID.
 - Headers:
   - Authorization: Bearer <JWT_TOKEN>
 - Path Parameters:
   - id (integer, required): ID of the todo.
 - Responses:
-  - 200 OK: Returns the requested todo.
+  - `200 OK`: Returns the requested todo.
     ```
     {
         "success": true,
@@ -418,7 +400,7 @@ The server will run on the port specified in the .env file (default is `3003`).
         }
     }
     ```
-  - 400 Bad Request: Invalid todo ID format.
+  - `400 Bad Request`: Invalid todo ID format.
     ```
     {
       "errors": [
@@ -430,7 +412,7 @@ The server will run on the port specified in the .env file (default is `3003`).
       ]
     }
     ```
-  - 404 Not Found: Todo does not exist or has been deleted.
+  - `404 Not Found`: Todo does not exist or has been deleted.
     ```
     {
         "error": "Todo not found"
@@ -439,7 +421,7 @@ The server will run on the port specified in the .env file (default is `3003`).
 
 #### Update Todo
 
-- Endpoint: PUT /api/todos/:id
+- Endpoint: `PUT /api/todos/:id`
 - Description: Update an existing todo item.
 - Headers:
   - Content-Type: application/json
@@ -453,7 +435,7 @@ The server will run on the port specified in the .env file (default is `3003`).
   - priority (integer, optional): Non-negative integer, default is 0.
   - is_completed (boolean, optional)
 - Responses:
-  - 200 OK: Todo successfully updated.
+  - `200 OK`: Todo successfully updated.
     ```
     {
       "success": true,
@@ -470,7 +452,7 @@ The server will run on the port specified in the .env file (default is `3003`).
       }
     }
     ```
-  - 400 Bad Request: Validation errors or invalid todo ID.
+  - `400 Bad Request`: Validation errors or invalid todo ID.
     ```
     {
         "errors": [
@@ -484,7 +466,7 @@ The server will run on the port specified in the .env file (default is `3003`).
         ]
     }
     ```
-  - 404 Not Found: Todo does not exist or has been deleted.
+  - `404 Not Found`: Todo does not exist or has been deleted.
     ```
     {
         "error": "Todo not found or already deleted"
@@ -493,27 +475,27 @@ The server will run on the port specified in the .env file (default is `3003`).
 
 #### Delete Todo
 
-- Endpoint: DELETE /api/todos/:id
+- Endpoint: `DELETE /api/todos/:id`
 - Description: Soft-delete a todo item.
 - Headers:
   - Authorization: Bearer <JWT_TOKEN>
 - Path Parameters:
   - id (integer, required): ID of the todo.
 - Responses:
-  - 200 OK: Todo successfully deleted.
+  - `200 OK`: Todo successfully deleted.
     ```
     {
         "success": true,
         "message": "Todo deleted successfully"
     }
     ```
-  - 404 Not Found: Todo does not exist or has been deleted.
+  - `404 Not Found`: Todo does not exist or has been deleted.
     ```
     {
         "error": "Todo not found or already deleted"
     }
     ```
-  - 400 Bad Request: Invalid todo ID format.
+  - `400 Bad Request`: Invalid todo ID format.
     ```
     {
         "error": "Invalid Todo ID"
